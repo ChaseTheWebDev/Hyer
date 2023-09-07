@@ -1,0 +1,248 @@
+.column-container{
+    height: 100vh;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "column1 column2 column3";
+}
+
+.column{
+    position: relative;
+    width: 100%;
+    color: var(--white);
+    padding: 4vw;
+}
+
+.column:first-child{
+    grid-area: column1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color:#151623;
+}
+
+.column:first-child .column-paragraph{
+   margin-bottom: 4vw;
+}
+
+.column:nth-child(2){
+    grid-area: column2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url("../assets/column-2-airplane-photo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+background-position: 20%;
+    cursor: pointer;
+}
+
+.column:nth-child(2) .column-title{
+position: absolute;
+z-index: 1;
+line-height: .4;
+transition: translate .5s;
+}
+
+.column:nth-child(2):hover .column-title{
+    translate: 0vw -4.25vw;
+}
+
+.column:nth-child(2) .column-paragraph{
+    display: none;
+    position: absolute;
+    animation: .5s fadeIn;
+}
+
+.column:nth-child(2):hover .column-paragraph{
+    display: block;
+}
+
+.column:last-child{
+    grid-area: column3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #bc7155;
+    background-image: url("../assets/flight_FILL0_wght400_GRAD0_opsz48.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.column:last-child .column-title{
+    position: absolute;
+    z-index: 1;
+    line-height: .4;
+    transition: translate .5s;
+}
+
+.column:last-child:hover .column-title{
+    translate: 0vw -4.25vw;
+}
+
+.column:last-child .column-paragraph{
+    display: none;
+    position: absolute;
+    bottom: 3.6vw;
+    animation: .5s fadeIn;
+ 
+}
+
+.column:last-child:hover .column-title + .column-paragraph{
+    display: block;
+}
+
+.column-title:after{
+    content: url("../assets/arrow-pointing-right.png");
+    position: absolute;
+    top: -7.5px;
+    right: -2.75vw;
+    opacity: 0.0;
+    transition: .80s opacity;
+}
+
+.column:hover .column-title::after{
+    opacity: 1.0;
+    animation: 2s linear .25 fadeIn;
+    animation: .5s linear .25s slide-right forwards;
+ 
+}
+
+
+/* ----- MEDIA ----- */
+
+
+@media(max-width: 37.5rem){
+    .column-container{
+        height: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 50vh);
+        grid-template-areas:
+        "column1"
+        "column2"
+        "column3";
+        margin-bottom: 4vw;
+    }
+    
+    .column{
+        position: static;
+        width: 100vw;
+        width: 100dvw;
+    }
+    
+    .column:first-child{
+        grid-area: column1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .column:first-child .column-title{
+        display: block;
+    }
+    
+    .column:first-child .column-paragraph{
+        display: block;
+    }
+    
+    .column:nth-child(2){
+        grid-area: column2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .column:nth-child(2) .column-title{
+        display: block;
+        position: static;
+        line-height: initial;
+        z-index: 0;
+        animation: none;
+    transition: initial;
+    }
+    
+    .column:nth-child(2):hover .column-title{
+        translate: initial;
+    }
+    
+    .column:nth-child(2) .column-paragraph{
+        display: block;
+        position: static;
+        animation: none;
+    }
+    
+    .column:nth-child(2):hover .column-paragraph{
+        display: block;
+    }
+
+    .column:last-child{
+        grid-area: column3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: #bc7155;
+        background-image: url("../assets/flight_FILL0_wght400_GRAD0_opsz48.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:50%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .column:last-child .column-title{
+        display: block;
+        position: static;
+        z-index: 0;
+        line-height: initial;
+        animation: none;
+    transition: initial;
+    }
+    
+    .column:last-child:hover .column-title{
+        translate: initial;
+    }
+    
+    .column:last-child .column-paragraph{
+        display: block;
+        position: static;
+        animation: none;
+     
+    }
+    
+    .column:last-child:hover .column-title + .column-paragraph{
+        display: block;
+    }
+
+        .column:last-child:hover .column-paragraph{
+            display: block;
+        }
+
+    .column-title:after{
+        display: none;
+        position: static;
+        top: 0px;
+        right: 0px;
+        opacity: 0.0;
+        transition: none;
+    }
+    
+    .column:hover .column-title::after{
+        display: none;
+        animation: 0s linear  0 fadeIn;
+        animation: 0s linear 0s slide-right forwards;
+        opacity: 0.0;
+    }
+}
+

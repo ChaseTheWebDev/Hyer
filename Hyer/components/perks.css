@@ -1,0 +1,54 @@
+.perks{
+    grid-area: perks;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.6vw;
+}
+
+.perk{
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+    gap:20px;
+    
+}
+
+.perk-logo{
+    background-image: url("../assets/flight_FILL0_wght400_GRAD0_opsz48.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8rem;
+    width: 8rem;
+    border: 1px dashed black;
+    border-bottom-right-radius: 40px;
+}
+
+.perk-info{
+    margin-right: 3vw;
+}
+
+/* ----- MEDIA ----- */
+
+@media (max-width: 37.5rem){
+    .perks{
+        grid-area: perks;
+        padding-inline: 3vw;
+        padding-bottom: 10vw;
+
+    }
+    
+    .perk{
+        width: fit-content;
+    }
+    
+    .perk-logo{
+        background-image: url("../assets/flight_FILL0_wght400_GRAD0_opsz48.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        width: 20vw;
+        border: 1px dashed black;
+        border-bottom-right-radius: 40px;
+    }
+
+}

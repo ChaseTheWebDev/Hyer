@@ -1,0 +1,33 @@
+.link-container{
+    display: inline-block;
+    height: auto;
+    width:fit-content;
+}
+
+.footer-link{
+    display: inline-block;
+    opacity: .6;
+    line-height: 1.6;
+}
+
+.footer-link:hover{
+    opacity: 1.0;
+}
+
+.bottom-container-links{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+}
+
+.list-title{
+    display: inline-block;
+    margin-bottom: 1.1vw;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}

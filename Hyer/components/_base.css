@@ -1,0 +1,46 @@
+:root{
+    /* COLORS */
+/* Standard Color Variables */
+    --black: black;
+    --white: white;
+    /* Theme-dependant Variables */
+    --text-color: black;
+    /* Layout */
+}
+
+*,
+*::before,
+*::after{
+box-sizing: border-box;
+}
+
+html{
+    font-size: 1.125rem;
+    overflow-x: hidden;
+}
+
+body{
+margin: 0px;
+font-family: 'Roboto', helvetica, sans-serif;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+/* ----- MEDIA ----- */
+
+@media (prefers-reduced-motion){
+    html{scroll-behavior: smooth;
+    }
+}
+
+@media(max-width:37.5rem){
+    html {
+        font-size: 1.5rem;
+    }
+}
+

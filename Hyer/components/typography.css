@@ -1,0 +1,131 @@
+.main-title{
+    font-size: 21vw;
+    font-weight: 900;
+}
+
+.title--xxxl{
+    font-size: 12vw;
+    font-weight: 700;
+}
+
+.title--xxl{
+    font-size:4.4vw;
+    font-weight: 700;
+}
+
+.belief-title--xxl{
+    font-size: 4.4vw;
+    font-weight: 700;
+}
+
+.title--xl{
+    font-size: 3.8vw;
+    font-weight: 700;
+
+}
+.title--lrg{    
+    font-size: 3.2vw;
+    font-weight: 700;
+    letter-spacing: -.1vw;
+}
+
+.title{
+    font-size: 1.75vw;
+    font-weight: 700;
+}
+
+.title--sm{    
+    font-size: 1.25vw;
+    font-weight: 700;
+}
+.text--xl{    
+    font-size: 2vw;
+    font-weight: 900;
+}
+.text--lrg{    
+    font-size: 1.75vw;
+    font-weight: 400;
+}
+
+.text{
+    font-size: 1.35vw;
+    font-weight: 400;
+}
+.text--sm{    
+    font-size: 1.25vw;
+    font-weight: 400;
+}
+
+.column:first-child .column-title{
+    font-size: 3.3vw;
+    font-weight: 600;
+}
+
+/* ----- MEDIA ----- */
+
+@media(max-width: 37.5rem){
+
+    .main-title{
+        font-size: 21vw;
+        font-weight: 900;
+    }
+    
+    .title--xxxl{
+        font-size: 12vw;
+        font-weight: 700;
+    }
+    
+    .title--xxl{
+        font-size:2.250rem;
+        font-weight: 700;
+    }
+
+    .belief-title--xxl{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .title--xl{
+        font-size: 1.8rem;
+        font-weight: 700;
+    
+    }
+    
+    .title--lrg{    
+        font-size: 5.2vw;
+        font-weight: 700;
+        letter-spacing: 0vw;
+    }
+    
+    .title{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .title--sm{    
+        font-size: 1.25vw;
+        font-weight: 700;
+    }
+    .text--xl{    
+        font-size: 2vw;
+        font-weight: 900;
+    }
+    .text--lrg{    
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    
+    .text{
+        font-size: .75rem;
+        font-weight: 400;
+    }
+    .text--sm{    
+        font-size: .6rem;
+        font-weight: 400;
+    }
+
+    .column:first-child .column-title{
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+}

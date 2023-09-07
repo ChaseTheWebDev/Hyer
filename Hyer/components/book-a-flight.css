@@ -1,0 +1,52 @@
+.book-a-flight-container{
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    width: 100dvw;
+    padding: 3.6vw;
+    background-image: url("../assets/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-container{
+    text-align: center;
+}
+
+.message-container p{
+    opacity: .6;
+}
+
+/* ----- MEDIA ----- */
+
+
+@media (max-width: 37.5rem) {
+    .book-a-flight-container{
+        height: 40vh;
+        height: 40dvh;
+        width: 100vw;
+        width: 100dvw;
+        padding: 3.6vw;
+        background-image: url("../assets/sky.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .message-container{
+        text-align: center;
+    }
+    
+    .message-container p{
+        display: none;
+    }
+
+    
+}

@@ -1,0 +1,132 @@
+.padded-container{
+    height: 100vh;
+    height: 100dvh;
+    width:100vw;
+    width:100dvw;
+    margin-bottom: 3.6vw;
+    padding-inline: 8.6vw;
+    padding-block: 3.6vw;
+
+}
+
+.destinations-title{
+    padding-bottom: 2vw;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    height: 70vh;
+    height: 70dvh;
+    padding-bottom: 4vw;;
+}
+
+.destination-image-container{
+    flex: 1 1 50%;
+    background-image: url("../assets/fiji.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-bottom-right-radius: 100px;
+}
+
+.destinations{
+    flex: 1 1 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "destination1 destination2"
+    "destination3 destination4";
+    gap: 3rem;
+}
+
+.destination{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 1.75rem;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-bottom-right-radius: 40px;
+}
+
+.destination:nth-child(1){
+    border-top: 1px solid lightgrey;
+}
+
+.destination:nth-child(2){
+    border-top: 1px solid lightgrey;
+}
+
+/* ----- MEDIA ----- */
+
+@media (max-width: 37.5rem){
+    .padded-container{
+        height: auto;
+        height: auto;
+        width:100vw;
+        width:100dvw;
+        margin-block: 4vw;
+        padding-inline: 3vw;
+        padding-block: 4vw;
+    }
+    
+    .popular-destinations-title{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 4vw;
+        height: fit-content;
+        padding-block: 3vw;
+        padding-right: 50%;
+        text-align: left;
+    }
+    
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 3rem;
+        height: 70vh;
+        height: 70dvh;
+        padding-bottom: 4vw;
+    }
+    
+    .destination-image-container{
+        display: none;
+        flex: 1 1 50%;
+        background-image: url("../assets/fiji.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        border-bottom-right-radius: 100px;
+    }
+    
+    .destinations{
+        flex: 1 1 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "destination1 destination2"
+        "destination3 destination4";
+        gap: 5vw;
+    }
+    
+    .destination{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-block: 3vw;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        border-bottom-right-radius: 40px;
+    }
+}

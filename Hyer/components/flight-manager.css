@@ -1,0 +1,74 @@
+.flight-manager-container{
+    height: 100vh;
+    height: 100dvh;
+    margin-top: 3.6vw;
+    padding: .5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "left-box right-box";
+}
+
+.left-box{
+    grid-area: left-box;
+    background-image: url("../assets/Phone-in-hand.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px dotted  black;
+    border-top: 1px dotted black;
+}
+
+.right-box{
+    height: 100%;
+    width:100%;
+    grid-area: right-box;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.6vw;
+    background-color: #151623;
+}
+
+/* ----- MEDIA ----- */
+
+@media (max-width: 37.5rem){
+    .flight-manager-container{
+        height: auto;
+        height: auto;
+        margin-top: 3.6vw;
+        padding: .5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "left-box"
+        "right-box";
+    }
+
+    .left-box{
+        grid-area: left-box;
+        background-image: url("../assets/Phone-in-hand.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        height: 60dvh;
+        width: 100vw;
+        border-bottom: none;
+    }
+    
+    .right-box{
+        height: 40vh;
+        height: 40dvh;
+        width:100%;
+        grid-area: right-box;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3.6vw;
+        background-color: #151623;
+    }
+}
